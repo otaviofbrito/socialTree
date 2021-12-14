@@ -1,5 +1,5 @@
 <h1 align="center">SocialTree</h1>
-<p align="center">Link sharing application</p>
+<p align="center">Basic link sharing application</p>
 <h1 align="center">
     <a href="https://otaviofbrito.github.io/socialTree/">🔗 SocialTree link</a>
 </h1>
