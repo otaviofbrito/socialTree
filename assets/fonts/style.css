@@ -1,0 +1,132 @@
+@font-face {
+  font-family: 'icons-sctree';
+  src:  url('fonts/icons-sctree.eot?43te04');
+  src:  url('fonts/icons-sctree.eot?43te04#iefix') format('embedded-opentype'),
+    url('fonts/icons-sctree.ttf?43te04') format('truetype'),
+    url('fonts/icons-sctree.woff?43te04') format('woff'),
+    url('fonts/icons-sctree.svg?43te04#icons-sctree') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons-sctree' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-edit:before {
+  content: "\e91e";
+}
+.icon-mail:before {
+  content: "\e91f";
+}
+.icon-map-pin:before {
+  content: "\e920";
+}
+.icon-message-square:before {
+  content: "\e921";
+}
+.icon-plus-circle:before {
+  content: "\e922";
+}
+.icon-x-circle:before {
+  content: "\e923";
+}
+.icon-apple:before {
+  content: "\e900";
+}
+.icon-applemusic:before {
+  content: "\e901";
+}
+.icon-applepay:before {
+  content: "\e902";
+}
+.icon-blogger:before {
+  content: "\e903";
+}
+.icon-buymeacoffee:before {
+  content: "\e904";
+}
+.icon-cashapp:before {
+  content: "\e905";
+}
+.icon-discord:before {
+  content: "\e906";
+}
+.icon-epicgames:before {
+  content: "\e907";
+}
+.icon-facebook:before {
+  content: "\e908";
+}
+.icon-github:before {
+  content: "\e909";
+}
+.icon-gmail:before {
+  content: "\e90a";
+}
+.icon-googlepay:before {
+  content: "\e90c";
+}
+.icon-instagram:before {
+  content: "\e90d";
+}
+.icon-linkedin:before {
+  content: "\e90e";
+}
+.icon-messenger:before {
+  content: "\e90f";
+}
+.icon-notion:before {
+  content: "\e910";
+}
+.icon-paypal:before {
+  content: "\e911";
+}
+.icon-reddit:before {
+  content: "\e912";
+}
+.icon-skype:before {
+  content: "\e913";
+}
+.icon-snapchat:before {
+  content: "\e914";
+}
+.icon-spotify:before {
+  content: "\e915";
+}
+.icon-steam:before {
+  content: "\e916";
+}
+.icon-telegram:before {
+  content: "\e917";
+}
+.icon-tiktok:before {
+  content: "\e918";
+}
+.icon-twitch:before {
+  content: "\e919";
+}
+.icon-twitter:before {
+  content: "\e91a";
+}
+.icon-wechat:before {
+  content: "\e91b";
+}
+.icon-whatsapp:before {
+  content: "\e91c";
+}
+.icon-youtube:before {
+  content: "\e91d";
+}

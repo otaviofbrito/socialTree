@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/jpg" href="./assets/tree-faviconst.png">
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!--ICONS-->
+    <link rel="stylesheet" href="./assets/fonts/style.css" />
+    <!--STYLE-->
+    <link rel="stylesheet" href="style.css" />
+    <title>SocialTree</title>
+  </head>
+  <body>
+    <div class="logo"><img src="./assets/social-treelogo.png" alt="logo_social-tree"></div>
+    <header id="user_avatar">
+      <div class="avatar_border">
+        <img
+          src="./assets/welcomeSign.png"
+          srcset="" alt="preview" id="imgPreview"
+        />
+      </div>
+      <label for="userPictureInput"><i class="icon-edit"></i></label>
+      <input type="file" id="userPictureInput" name="userPictureInput">
+    </header>
+    <main class="container">
+      <section id="link_cards">
+        <div class="cards">
+          <div class="card_set">
+
+            <!--INNERHTML JS-->
+            
+          </div>
+        </div>
+        <div id="add_button" class="new_card_button" onclick="Modal.open()">
+          <a><i class="icon-plus-circle"></i></a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div><p>SocialTree - Otavio Brito</p>
+      <a href="https://github.com/otaviofbrito" target="_blank"><i class="icon-github"></i></a></div>
+    </footer>
+    <div class="modal_overlay add_modal">
+      <div class="modal">
+        <div class="form">
+          <h2>New Card</h2>
+          <form action="" onsubmit="Form.submit(event)">
+            <div class="input_group">
+              <label for="">Link</label>
+              <input type="text" id="card_link" name="card_link"  novalidate="novalidate" required>
+            </div>
+            <div class="input_group">
+              <label for="card_label">Label</label>
+              <input type="text" id="card_label" name="card_label" placeholder="New card" required>
+            </div>
+            <div class="input_group input_actions">
+              <a class="button cancel_button" onclick="Modal.close()">Cancel</a>
+              <button>Send</button>
+            </div>
+          </form>
+        </div>      
+      </div>
+    <script src="script.js"></script>
+  </body>
+</html>
