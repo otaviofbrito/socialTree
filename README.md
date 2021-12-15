@@ -3,7 +3,20 @@
 <h1 align="center">
     <a href="https://otaviofbrito.github.io/socialTree/">🔗 SocialTree link</a>
 </h1>
-<h1 align="center">Techs</h1>
-<p>HTML<br>JavaScript<br>CSS<p>
+### 🛠 Techs
+
+The following techs were used in this project:
+
+- HTML
+- JAVASCRIPT
+- CSS
+
+
+### Features
+
+- [x] Create your own link shortcut card
+- [x] Personal avatar picutre
+- [x] Local Storage data save
+- [ ] Personal link sharing
 <h1 align="center">Author</h1>
-<p>Otavio Brito</p>
+<a href = "github.com/otaviofbrito" target = "_blank">Otavio Brito</a>
