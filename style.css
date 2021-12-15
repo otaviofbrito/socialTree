@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 a {
@@ -32,7 +33,6 @@ body {
 .container {
   width: min(90vw, 800px);
   margin: auto;
-  
 }
 /*=======LOGO*/
 .logo {
@@ -60,7 +60,7 @@ body {
   transition: 0.2s;
 }
 #user_avatar .avatar_border {
-  position: relative;  
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -73,7 +73,6 @@ body {
   border-radius: 100%;
   position: absolute;
   clip-path: circle();
-
 }
 
 #user_avatar a {
@@ -83,7 +82,7 @@ body {
   font-size: 0.75rem;
 }
 /*=======LINK-CARDS*/
-#link_cards{
+#link_cards {
   margin-top: 4rem;
 }
 .cards {
@@ -185,7 +184,7 @@ body {
   color: var(--negative-color);
 }
 /*EDIT INPUT ICON*/
-#user_avatar label{ 
+#user_avatar label {
   display: inline-flex;
   position: absolute;
   top: 0;
@@ -193,11 +192,11 @@ body {
   cursor: pointer;
   color: var(--primary-color);
   font-size: 1rem;
-  
+
   transition: 0.2s;
   transform: translateY(0);
 }
-#user_avatar label:hover{
+#user_avatar label:hover {
   color: var(--neutral-color);
   transform: translateY(-10%);
 }
@@ -222,14 +221,12 @@ body {
   visibility: hidden;
 
   transition: 0.2s;
-  
 }
 .modal_overlay.active {
   opacity: 1;
   visibility: visible;
-  
 }
-.modal_overlay.active .modal{
+.modal_overlay.active .modal {
   transform: translateY(0);
 }
 .modal {
@@ -271,7 +268,7 @@ input {
   width: 48%;
 }
 /*=======FOOTER*/
-footer p{
+footer p {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -280,7 +277,7 @@ footer p{
   color: var(--primary-color);
   opacity: 0.5;
 }
-footer a{
+footer a {
   display: grid;
   margin: auto;
   align-items: center;
@@ -311,7 +308,7 @@ footer a:hover {
   .modal {
     border-radius: 0.5rem;
   }
-  #user_avatar img{
+  #user_avatar img {
     height: 8rem;
     width: 8rem;
   }
