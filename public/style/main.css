@@ -1,0 +1,45 @@
+/*RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*VARIABLES*/
+:root {
+  --background-light-color: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
+  --primary-color: #fef9ef;
+  --alternate-light-color: #f2f2f7;
+  --text--color: #495057;
+  --positive-color: #05c665;
+  --negative-color: #ff2767;
+  --neutral-color: #48cae4;
+  --default-font-style: 'Poppins', 'sans-serif';
+}
+
+/*=======RESPONSIVE*/
+@media (min-width: 600px) {
+  html {
+    font-size: 87.5%;
+  }
+
+  .card_set .card_button {
+    width: 40%;
+  }
+
+  .modal_overlay {
+    align-items: center;
+  }
+  .modal {
+    border-radius: 0.5rem;
+  }
+  #user_avatar img {
+    height: 8rem;
+    width: 8rem;
+  }
+}

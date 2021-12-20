@@ -1,0 +1,29 @@
+/*=======LINK-CARDS*/
+#link_cards {
+  margin-top: 4rem;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+.card_set .card_button {
+  border: 1px var(--primary-color) solid;
+  display: inline-grid;
+  padding: 0.5rem 0 0.5rem 0;
+  width: 80%;
+  margin-bottom: 1rem;
+  color: var(--text--color);
+  border-radius: 2rem;
+  background: var(--primary-color);
+  overflow: hidden;
+  transition: 0.2s;
+
+  transform: rotate(0);
+}
+.card_set .card_button:hover {
+  background-color: #dee2e6;
+  border-color: #dee2e6;
+  transform: rotate(-1deg);
+}

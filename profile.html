@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="./assets/tree-faviconst.png"
+    />
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!--ICONS-->
+    <link rel="stylesheet" href="./public/images/fonts/style.css" />
+    <!--STYLE-->
+    <link rel="stylesheet" href="./public/style/main.css" />
+    <link rel="stylesheet" href="./public/style/pages/profile.css" />
+    <link rel="stylesheet" href="./public/style/partials/buttons.css" />
+    <link rel="stylesheet" href="./public/style/partials/forms.css" />
+    <link rel="stylesheet" href="./public/style/partials/footer.css" />
+
+    <title>Profile | SocialTree</title>
+  </head>
+  <body>
+    <aside class="profile_preview">
+      <img src="" alt="profile photo" />
+      <h2>Name</h2>
+      <button class="button" form="form_profile" type="submit">Save</button>
+    </aside>
+    <main class="profile_data">
+      <form action="" class="form_profile">
+        <fieldset>
+          <legend>Profile data</legend>
+          <div class="separator"></div>
+          <div class="input_group">
+            <div class="input_wrapper">
+              <label for="name">Instagram</label>
+              <input type="text" id="name" name="name" />
+            </div>
+            <div class="input_wrapper">
+              <label for="avatar">Profile Picture</label>
+              <input
+                type="url"
+                id="avatar"
+                name="avatar"
+                placeholder="https://"
+              />
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      <div>
+        <p>SocialTree - Otavio Brito</p>
+        <a href="https://github.com/otaviofbrito" target="_blank"
+          ><i class="icon-github"></i
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>

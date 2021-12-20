@@ -1,0 +1,37 @@
+/*=======MODAL*/
+.modal_overlay {
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  position: fixed;
+  top: 0;
+
+  display: grid;
+  align-items: flex-end;
+  justify-content: center;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: 0.2s;
+}
+.modal_overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+.modal_overlay.active .modal {
+  transform: translateY(0);
+}
+.modal {
+  background: var(--primary-color);
+  padding: 2rem;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 0.5rem 0.5rem 0 0;
+  position: relative;
+  z-index: 1;
+  transition: 0.25s;
+  transform: translateY(10%);
+}

@@ -1,0 +1,83 @@
+/*=======BUTTONS*/
+
+.input_actions .cancel_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px var(--negative-color) solid;
+  color: var(--negative-color);
+  opacity: 0.6;
+  font-weight: normal;
+  transition: 0.2s;
+}
+.input_actions .cancel_button:hover {
+  opacity: 1;
+}
+.input_actions button {
+  font-size: 93.75%;
+  color: var(--primary-color);
+  background: var(--positive-color);
+  border: none;
+  transition: 0.2s;
+}
+.input_actions button:hover {
+  opacity: 0.7;
+}
+.input_actions .cancel_button,
+.input_actions button {
+  height: 50px;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+/* ADD AND DELETE BUTTONS*/
+#add_button {
+  font-size: 2rem;
+  color: var(--primary-color);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: fit-content;
+  margin: auto;
+  cursor: pointer;
+  transition: 0.2s;
+  transform: translateY(0);
+}
+#add_button:hover {
+  color: var(--positive-color);
+  transform: translateY(-5%);
+}
+.card_set i {
+  font-size: 1rem;
+  cursor: pointer;
+  color: var(--primary-color);
+  opacity: 0.3;
+  transform: translateY(0);
+
+  transition: 0.35s;
+}
+.card_set i:hover {
+  opacity: 1;
+  transform: translateY(-10%);
+  color: var(--negative-color);
+}
+
+/*EDIT INPUT ICON*/
+#user_avatar label {
+  display: inline-flex;
+  position: absolute;
+  top: 0;
+  right: -2rem;
+  cursor: pointer;
+  color: var(--primary-color);
+  font-size: 1rem;
+
+  transition: 0.2s;
+  transform: translateY(0);
+}
+#user_avatar label:hover {
+  color: var(--neutral-color);
+  transform: translateY(-10%);
+}
+#user_avatar input {
+  display: none;
+}

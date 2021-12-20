@@ -1,0 +1,26 @@
+/*=======FORM*/
+form {
+  max-width: 500px;
+}
+form h2 {
+  margin-top: 0;
+}
+input {
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.6rem;
+  width: 100%;
+  background-color: var(--alternate-light-color);
+}
+.input_group {
+  margin-bottom: 0.8rem;
+}
+.input_actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.input_actions .cancel_button,
+.input_actions button {
+  width: 48%;
+}
