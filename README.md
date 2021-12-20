@@ -19,4 +19,4 @@ The following techs were used in this project:
 - [x] Local Storage data save
 - [ ] Personal link sharing
 <h1 align="center">Author</h1>
-<a href = "github.com/otaviofbrito" target = "_blank">Otavio Brito</a>
+<a href = "https://github.com/otaviofbrito" target = "_blank">Otavio Brito</a>
