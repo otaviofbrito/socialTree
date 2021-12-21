@@ -1,0 +1,27 @@
+{
+  "name": "dcv-sctree",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">SocialTree</h1> <p align=\"center\">Basic link sharing application</p> <h1 align=\"center\">     <a href=\"https://otaviofbrito.github.io/socialTree/\">🔗 SocialTree link</a> </h1> ### 🛠 Techs",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/otaviofbrito/socialTree.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/otaviofbrito/socialTree/issues"
+  },
+  "homepage": "https://github.com/otaviofbrito/socialTree#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

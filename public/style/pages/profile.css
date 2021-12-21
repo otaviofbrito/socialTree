@@ -15,6 +15,7 @@ aside {
   border-radius: 0.5rem 0 0 0.5rem;
   display: grid;
   gap: 1.4rem;
+  justify-items: center;
   justify-content: center;
   transition: 0.2s;
 }
@@ -27,7 +28,13 @@ main {
   border-radius: 0 0.5rem 0.5rem 0;
   transition: 0.2s;
 }
-
+.input_wrapper label{
+  font-weight: bold;
+}
+.input_wrapper input {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
 /*profile pre-view*/
 
 aside img {
@@ -38,6 +45,8 @@ aside img {
 
 aside h2 {
   text-align: center;
+  overflow-wrap: anywhere;
+  max-width: 20rem;
 }
 
 /*profile input*/

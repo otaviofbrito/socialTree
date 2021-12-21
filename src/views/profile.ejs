@@ -17,32 +17,32 @@
       rel="stylesheet"
     />
     <!--ICONS-->
-    <link rel="stylesheet" href="./public/images/fonts/style.css" />
+    <link rel="stylesheet" href="/images/fonts/style.css" />
     <!--STYLE-->
-    <link rel="stylesheet" href="./public/style/main.css" />
-    <link rel="stylesheet" href="./public/style/pages/profile.css" />
-    <link rel="stylesheet" href="./public/style/partials/buttons.css" />
-    <link rel="stylesheet" href="./public/style/partials/forms.css" />
-    <link rel="stylesheet" href="./public/style/partials/footer.css" />
+    <link rel="stylesheet" href="/style/main.css" />
+    <link rel="stylesheet" href="/style/pages/profile.css" />
+    <link rel="stylesheet" href="/style/partials/buttons.css" />
+    <link rel="stylesheet" href="/style/partials/forms.css" />
+    <link rel="stylesheet" href="/style/partials/footer.css" />
 
-    <title>Profile | SocialTree</title>
+    <title><%= profile.name %> | SocialTree</title>
   </head>
   <body>
     <div class="container_profile">
       <aside class="profile_preview">
-        <img src="https://github.com/otaviofbrito.png" alt="profile photo" />
-        <h2>Name</h2>
+        <img src="<%= profile.avatar %>" alt="profile photo" />
+        <h2>@<%= profile.name %></h2>
         <button class="button" form="form_profile" type="submit">Save</button>
       </aside>
       <main class="profile_data">
-        <form action="" class="form_profile">
+        <form action="/profile" id="form_profile" method="post">
           <fieldset>
             <legend><h2>Edit Profile</h2></legend>
             <div class="separator"></div>
             <div class="input_group">
               <div class="input_wrapper">
                 <label for="name">Instagram</label>
-                <input type="text" id="name" name="name" />
+                <input type="text" id="name" name="name" value="<%= profile.name %> "/>
               </div>
               <div class="input_wrapper">
                 <label for="avatar">Profile Picture</label>
@@ -51,6 +51,7 @@
                   id="avatar"
                   name="avatar"
                   placeholder="https://"
+                  value="<%= profile.avatar %> "
                 />
               </div>
             </div>
