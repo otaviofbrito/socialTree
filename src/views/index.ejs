@@ -26,27 +26,36 @@
     <link rel="stylesheet" href="/style/partials/footer.css">
 
 
-    <title>SocialTree</title>
+    <title><%= profile.name %> | SocialTree</title>
   </head>
   <body>
     <header id="user_avatar">
       <div class="avatar_border">
         <img
-          src="./public/images/welcomeSign.png"
+          src="<%= profile.avatar %> "
           srcset="" alt="preview" id="imgPreview"
         />
+        <div class="edit_button"><a href="/profile"><i class="icon-edit"></i></a></div>
       </div>
-      <div class="edit_button"><a href="/profile"><i class="icon-edit"></i></a></div>
+      <p>@<%= profile.name %> </p>
     </header>
     <main class="container">
       <section id="link_cards">
         <div class="cards">
-          <div class="card_set">
+          
 
-            <!--INNERHTML JS-->
-            
+          <div class="card">
+            <div class="card_name">
+              <a href="https://<%= cards.link %>" class="card_button" target="_blank"><%= cards.label %></a>
+            </div>
+            <div class="del_button">
+              <a><i class="icon-x-circle"></i></a>
+            </div>  
           </div>
+
+         
         </div>
+        
         <div id="add_button" class="new_card_button" onclick="Modal.open()">
           <a><i class="icon-plus-circle"></i></a>
         </div>
@@ -60,7 +69,7 @@
       <div class="modal">
         <div class="form">
           <h2>New Card</h2>
-          <form action="" onsubmit="Form.submit(event)">
+          <form action="/" onsubmit="Form.submit(event)">
             <div class="input_group">
               <label for="">Link</label>
               <input type="text" id="card_link" name="card_link"  novalidate="novalidate" required>
@@ -76,7 +85,7 @@
           </form>
         </div>      
       </div>
-    <script src="public/scripts/script.js"></script>
+    <script src="/scripts/script.js"></script>
   </body>
 </html>
 

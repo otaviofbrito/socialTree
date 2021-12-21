@@ -1,4 +1,4 @@
-const { update } = require('../model/Profile')
+
 const Profile = require('../model/Profile')
 
 module.exports = {
