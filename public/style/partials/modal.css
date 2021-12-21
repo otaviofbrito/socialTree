@@ -35,3 +35,22 @@
   transition: 0.25s;
   transform: translateY(10%);
 }
+
+/*RESPONSIVE*/
+
+@media (min-width: 600px){
+  .card_set .card_button {
+    width: 40%;
+  }
+
+  .modal_overlay {
+    align-items: center;
+  }
+  .modal {
+    border-radius: 0.5rem;
+  }
+  #user_avatar img {
+    height: 8rem;
+    width: 8rem;
+  }
+}

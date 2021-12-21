@@ -7,7 +7,7 @@
     <link
       rel="shortcut icon"
       type="image/jpg"
-      href="./assets/tree-faviconst.png"
+      href="./public/images/tree-faviconst.png"
     />
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,34 +28,36 @@
     <title>Profile | SocialTree</title>
   </head>
   <body>
-    <aside class="profile_preview">
-      <img src="" alt="profile photo" />
-      <h2>Name</h2>
-      <button class="button" form="form_profile" type="submit">Save</button>
-    </aside>
-    <main class="profile_data">
-      <form action="" class="form_profile">
-        <fieldset>
-          <legend>Profile data</legend>
-          <div class="separator"></div>
-          <div class="input_group">
-            <div class="input_wrapper">
-              <label for="name">Instagram</label>
-              <input type="text" id="name" name="name" />
+    <div class="container_profile">
+      <aside class="profile_preview">
+        <img src="https://github.com/otaviofbrito.png" alt="profile photo" />
+        <h2>Name</h2>
+        <button class="button" form="form_profile" type="submit">Save</button>
+      </aside>
+      <main class="profile_data">
+        <form action="" class="form_profile">
+          <fieldset>
+            <legend><h2>Edit Profile</h2></legend>
+            <div class="separator"></div>
+            <div class="input_group">
+              <div class="input_wrapper">
+                <label for="name">Instagram</label>
+                <input type="text" id="name" name="name" />
+              </div>
+              <div class="input_wrapper">
+                <label for="avatar">Profile Picture</label>
+                <input
+                  type="url"
+                  id="avatar"
+                  name="avatar"
+                  placeholder="https://"
+                />
+              </div>
             </div>
-            <div class="input_wrapper">
-              <label for="avatar">Profile Picture</label>
-              <input
-                type="url"
-                id="avatar"
-                name="avatar"
-                placeholder="https://"
-              />
-            </div>
-          </div>
-        </fieldset>
-      </form>
-    </main>
+          </fieldset>
+        </form>
+      </main>
+    </div>
     <footer>
       <div>
         <p>SocialTree - Otavio Brito</p>

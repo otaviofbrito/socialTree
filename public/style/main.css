@@ -9,10 +9,16 @@
 a {
   text-decoration: none;
 }
-
+html {
+  font-size: 93.75%;
+}
+body {
+  font-family: var(--default-font-style);
+  background: var(--background-color);
+}
 /*VARIABLES*/
 :root {
-  --background-light-color: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
+  --background-color: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
   --primary-color: #fef9ef;
   --alternate-light-color: #f2f2f7;
   --text--color: #495057;
@@ -26,20 +32,5 @@ a {
 @media (min-width: 600px) {
   html {
     font-size: 87.5%;
-  }
-
-  .card_set .card_button {
-    width: 40%;
-  }
-
-  .modal_overlay {
-    align-items: center;
-  }
-  .modal {
-    border-radius: 0.5rem;
-  }
-  #user_avatar img {
-    height: 8rem;
-    width: 8rem;
   }
 }

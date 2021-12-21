@@ -17,29 +17,7 @@ const Storage = {
 }
 
 //USER-PROFILE-SETUP
-const userPicture = {
-  getPicture(){
-    document.querySelector('#userPictureInput').addEventListener("change", function(){
-      const reader = new FileReader();
 
-      reader.addEventListener("load", () => {
-        localStorage.setItem("social-tree:userPicture", reader.result )
-      })
-
-      reader.readAsDataURL(this.files[0]);
-      location.reload()
-    })
-    document.addEventListener("DOMContentLoaded", () => {
-      const recentImageDataUrl = localStorage.getItem("social-tree:userPicture");
-
-      if (recentImageDataUrl) {
-        document.querySelector('#imgPreview').setAttribute("src", recentImageDataUrl)
-        
-      }
-    })
-    
-  }
-}
 const CardSetUp = {
   all: Storage.get(),
 
@@ -64,11 +42,14 @@ const DOM = {
     DOM.cardContainer.appendChild(div)
   },
   innerHTMLCard(card, index) {
-    const html = `<div class="card_set">
-                  <a href="https://${card.cardLink}" class="card_button" target="_blank">${card.cardLabel}</a>
-                  <a onclick="CardSetUp.remove(${index})"><i class="icon-x-circle"></i></a>
-                  
-                </div>`
+    const html = `
+    <div class="card_set">
+      <a href="https://${card.cardLink}" class="card_button" target="_blank">${card.cardLabel}</a>
+    <div class="del_button">
+      <a onclick="CardSetUp.remove(${index})"><i class="icon-x-circle"></i></a>
+    </div>
+  </div>
+  `
     return html
   },
   clearCards() {
@@ -110,11 +91,8 @@ const Form = {
 const App = {
   init() {
     CardSetUp.all.forEach(DOM.addNewCard)
-    
-    Storage.set(CardSetUp.all)
 
-    userPicture.getPicture()
-    
+    Storage.set(CardSetUp.all)
   },
   reload() {
     DOM.clearCards()

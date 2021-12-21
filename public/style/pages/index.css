@@ -1,10 +1,4 @@
-html {
-  font-size: 93.75%;
-}
-body {
-  font-family: var(--default-font-style);
-  background: var(--background-light-color);
-}
+
 .container {
   width: min(90vw, 800px);
   margin: auto;
@@ -20,12 +14,10 @@ body {
 #user_avatar {
   margin: auto;
   margin-top: 2rem;
-  width: fit-content;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  position: relative;
+  margin-left: 1.5rem;
+  
 }
 #user_avatar img {
   clip-path: circle();
