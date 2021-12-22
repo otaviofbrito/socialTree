@@ -6,6 +6,6 @@ module.exports = {
       label: req.body.card_label,
       link: req.body.card_link
     })
-    return res.redirect('index')
+    return res.redirect('/')
   }
 }

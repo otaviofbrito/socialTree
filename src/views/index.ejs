@@ -43,17 +43,18 @@
       <section id="link_cards">
         <div class="cards">
           
-
+          <% cards.forEach((card) => { %>
+            
           <div class="card">
             <div class="card_name">
-              <a href="https://<%= cards.link %>" class="card_button" target="_blank"><%= cards.label %></a>
+              <a href="https://<%= card.link %>" class="card_button" target="_blank"><%= card.label %></a>
             </div>
             <div class="del_button">
               <a><i class="icon-x-circle"></i></a>
             </div>  
           </div>
 
-         
+          <% }) %> 
         </div>
         
         <div id="add_button" class="new_card_button" onclick="Modal.open()">
@@ -69,9 +70,9 @@
       <div class="modal">
         <div class="form">
           <h2>New Card</h2>
-          <form action="/" onsubmit="Form.submit(event)">
+          <form action="/" method="post" id="form_card">
             <div class="input_group">
-              <label for="">Link</label>
+              <label for="card_link">Link</label>
               <input type="text" id="card_link" name="card_link"  novalidate="novalidate" required>
             </div>
             <div class="input_group">
@@ -80,7 +81,7 @@
             </div>
             <div class="input_group input_actions">
               <a class="button cancel_button" onclick="Modal.close()">Cancel</a>
-              <button>Send</button>
+              <button form="form_card">Send</button>
             </div>
           </form>
         </div>      
