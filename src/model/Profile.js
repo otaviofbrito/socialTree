@@ -1,14 +1,23 @@
-let data = {
-  name: 'OTAVIO',
-  avatar: 'https://github.com/otaviofbrito.png'
-}
-
+const Database = require('../db/config')
 module.exports = {
-  get() {
+  async get() {
+    const db = await Database()
+
+    const data = await db.get(`SELECT * FROM profile`)
+
+    await db.close()
+
     return data
+  
   },
-  update(newData){
-    data = newData
-    return data
+  async update(newData){
+    const db = await Database()
+
+    db.run(`UPDATE profile SET
+    name = "${newData.name}",
+    avatar = "${newData.avatar}"`)
+
+
+    await db.close()
   }
 }

@@ -4,7 +4,8 @@
   "description": "<h1 align=\"center\">SocialTree</h1> <p align=\"center\">Basic link sharing application</p> <h1 align=\"center\">     <a href=\"https://otaviofbrito.github.io/socialTree/\">🔗 SocialTree link</a> </h1> ### 🛠 Techs",
   "main": "src/server.js",
   "scripts": {
-    "dev": "nodemon ."
+    "dev": "nodemon .",
+    "init-db": "node src/db/init.js"
   },
   "repository": {
     "type": "git",
@@ -19,7 +20,9 @@
   "homepage": "https://github.com/otaviofbrito/socialTree#readme",
   "dependencies": {
     "ejs": "^3.1.6",
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "sqlite": "^4.0.23",
+    "sqlite3": "^5.0.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"

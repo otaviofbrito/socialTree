@@ -1,22 +1,24 @@
-let data = [
-  {
-    id:1,
-    label: 'AAAAAAAAAAA',
-    link: 'instagram.com'
-  }
-]
-
+const Database = require('../db/config')
 module.exports = {
-  get() {
-    return data
+  async get() {
+    const db = await Database()
+    const cards = await db.all(`SELECT * FROM cards`)
+
+    await db.close()
+    return cards
   },
-  create(newCard) {
-    return data.push({
-      label: newCard.label,
-      link: newCard.link
-    })
+  async create(newCard) {
+    const db = await Database()
+    
+    await db.run(`INSERT INTO cards (
+      card_label,
+      card_link
+    ) VALUES (
+      "${newCard.label}",
+      "${newCard.link}"
+    )`)
   },
-  delete(id){
-    return data.splice(id, 1)
+  delete(id) {
+    
   }
 }
