@@ -10,6 +10,7 @@ const profileController = require('./controllers/ProfileController')
 
 routes.get('/', DashboardController.index)
 routes.post('/', CardsController.saveCard)
+routes.post('/delete/:id', CardsController.deleteCard)
 routes.get('/profile', profileController.index)
 routes.post('/profile', profileController.update)
 

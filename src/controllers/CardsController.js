@@ -7,5 +7,10 @@ module.exports = {
       link: req.body.card_link
     })
     return res.redirect('/')
+  },
+  deleteCard(req, res){
+    const cardId = req.params.id
+    Card.delete(cardId)
+    return res.redirect('/')
   }
 }

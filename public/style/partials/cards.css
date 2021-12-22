@@ -36,11 +36,13 @@
   transform: rotate(-1deg);
 }
 /*delete button*/
-.card .del_button{
+#delete_button{
   color: rgba(194, 194, 194, 0.392);
   cursor: pointer;
   transition: 0.2s;
+  background: none;
+  border: none;
 }
-.card .del_button:hover{
+#delete_button:hover{
   color: var(--negative-color);
 }

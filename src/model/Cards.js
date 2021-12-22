@@ -1,5 +1,6 @@
 let data = [
   {
+    id:1,
     label: 'AAAAAAAAAAA',
     link: 'instagram.com'
   }
@@ -14,5 +15,8 @@ module.exports = {
       label: newCard.label,
       link: newCard.link
     })
+  },
+  delete(id){
+    return data.splice(id, 1)
   }
 }
