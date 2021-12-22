@@ -29,8 +29,10 @@
   </head>
   <body>
     <div class="container_profile">
+      
       <aside class="profile_preview">
-        <img src="<%= profile.avatar %>" alt="profile photo" />
+        <div class="back_button"><a href="/"><img src="/images/chevron-left.svg" alt=""></a></div>
+        <img src="<%= profile.avatar %>" alt="profile photo" class="avatar_profile" />
         <h2>@<%= profile.name %></h2>
         <button class="button" form="form_profile" type="submit">Save</button>
       </aside>
@@ -42,7 +44,12 @@
             <div class="input_group">
               <div class="input_wrapper">
                 <label for="name">Instagram</label>
-                <input type="text" id="name" name="name" value="<%= profile.name %> "/>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  value="<%= profile.name %> "
+                />
               </div>
               <div class="input_wrapper">
                 <label for="avatar">Profile Picture</label>

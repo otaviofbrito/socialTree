@@ -18,6 +18,7 @@ aside {
   justify-items: center;
   justify-content: center;
   transition: 0.2s;
+  position: relative;
 }
 
 main {
@@ -37,7 +38,7 @@ main {
 }
 /*profile pre-view*/
 
-aside img {
+aside .avatar_profile {
   border-radius: 50%;
   width: 15rem;
   height: 15rem;
@@ -78,8 +79,9 @@ div .input_group {
     width: 80%;
     padding: 2rem;
     gap: 1rem;
+    position: relative;
   }
-  aside img {
+  aside .avatar_profile {
     width: 8rem;
     height: 8rem;
   }
