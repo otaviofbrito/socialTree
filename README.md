@@ -7,16 +7,17 @@
 
 The following techs were used in this project:
 
-- HTML
+- EJS
 - JAVASCRIPT
 - CSS
-
+- EXPRESS
+- SQLITE
 
 ### Features
 
 - [x] Create your own link shortcut card
 - [x] Personal avatar picutre
-- [x] Local Storage data save
+- [x] Storage data save
 - [ ] Personal link sharing
 <h1 align="center">Author</h1>
 <a href = "https://github.com/otaviofbrito" target = "_blank">Otavio Brito</a>
