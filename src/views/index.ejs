@@ -47,11 +47,11 @@
             
           <div class="card" data-id="<%= card.id %> ">
             <div class="card_name">
-              <a href="https://<%= card.link %>" class="card_button" target="_blank"><%= card.label %></a>
+              <a href="https://<%= card.card_link %>" class="card_button" target="_blank"><%= card.card_label %></a>
             </div>
             <div class="del_button">
               <button id="delete_button" form="delete_card" type="submit"><i class="icon-x-circle"></i></button>
-              <form action="/delete/<%= card.id %> " method="post" id="delete_card"></form>
+              <form action="/delete/<%= card.id %>" method="post" id="delete_card"></form>
             </div>  
           </div>
 

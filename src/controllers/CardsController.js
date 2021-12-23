@@ -8,9 +8,11 @@ module.exports = {
     })
     return res.redirect('/')
   },
-  deleteCard(req, res){
+  async deleteCard(req, res){
     const cardId = req.params.id
-    Card.delete(cardId)
+
+    await Card.delete(cardId)
+
     return res.redirect('/')
   }
 }
