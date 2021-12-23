@@ -18,7 +18,7 @@ const initDb = {
       name,
       avatar
     ) VALUES (
-      "Newprofile",
+      "New profile",
       "https://github.com/otaviofbrito.png"
     )`)
     await db.run(`INSERT INTO cards (
